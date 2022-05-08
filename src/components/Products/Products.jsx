@@ -1,8 +1,9 @@
-import React from 'react';
-import Grid from '@material-ui/core/Grid';
+import React from "react";
+import Grid from "@material-ui/core/Grid";
 
-import Product from './Product/Product';
-import useStyles from './styles';
+import Product from "./Product/Product";
+import useStyles from "./styles";
+import madara from "./madara.mp4";
 
 const Products = ({ products, onAddToCart }) => {
   const classes = useStyles();
@@ -11,6 +12,11 @@ const Products = ({ products, onAddToCart }) => {
 
   return (
     <main className={classes.content}>
+      <div className={classes.backgroundLayer}>
+        <video className={classes.backgroundVideo} loop autoPlay muted>
+          <source src={madara} type="video/mp4" />
+        </video>
+      </div>
       <div className={classes.toolbar} />
       <Grid container justify="center" spacing={4}>
         {products.map((product) => (
@@ -24,4 +30,3 @@ const Products = ({ products, onAddToCart }) => {
 };
 
 export default Products;
-
