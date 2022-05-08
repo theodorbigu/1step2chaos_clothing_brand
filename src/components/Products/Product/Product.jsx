@@ -27,7 +27,11 @@ const Product = ({ product, onAddToCart }) => {
       <CardContent>
         <div className={classes.cardContent}>
           <Typography
-            style={{ fontFamily: '"Press Start 2P"', textAlign: "center" }}
+            style={{
+              fontFamily: '"Press Start 2P"',
+              textAlign: "center",
+              fontSize: "14px",
+            }}
             className="classes.font"
             gutterBottom
             variant="h6"
@@ -39,7 +43,7 @@ const Product = ({ product, onAddToCart }) => {
             style={{
               fontFamily: '"Press Start 2P"',
               textAlign: "center",
-              fontSize: "16px",
+              fontSize: "14px",
             }}
             gutterBottom
             variant="h6"
